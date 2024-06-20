@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, ImageBackground, StyleSheet, Text, View, TextInput } from 'react-native';
+import { Image, ImageBackground, StyleSheet, Text, View, TextInput,TouchableOpacity } from 'react-native';
 import PaginaBase from '../PaginaBase';
 
 
@@ -36,7 +36,7 @@ export default function Login({ navigation }) {
                             placeholderTextColor={'#BCBCBC'}
                         />
 
-                        <TouchableOpacity style={styles.button}>
+                        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Tab')}>
                             <Text style={styles.textoBotao}>Entrar</Text>
                         </TouchableOpacity>
                     </View>
